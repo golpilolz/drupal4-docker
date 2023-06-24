@@ -1,3 +1,8 @@
+:warning: DO NOT USE FOR PRODUCTION SITE :warning:  
+Drupal 4 is an old and unmaintained version with many security holes  
+Installed packages are also unmaintained versions  
+:warning: DO NOT USE FOR PRODUCTION SITE :warning:  
+
 ## Init project
 
 Create rootfs.tar.xz with .docker/mkimage.sh  
@@ -34,10 +39,10 @@ mysql -u root -e "GRANT ALL PRIVILEGES ON *.* TO 'debian-sys-maint'@'localhost' 
 mysql -u root -e "DROP DATABASE drupal;"
 ````
 
-#### Drupal
+## Drupal
 Edit your host file and ENJOY !  
 Website is available at http://drupal4.local
 
-### Mailhog
+## Mailhog
 By default sendmail is configured to use mailhog.  
 Mailhog is available at http://127.0.0.1:8025

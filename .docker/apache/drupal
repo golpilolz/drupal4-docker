@@ -1,0 +1,20 @@
+# Toutes les adresses IP doivent répondre aux requêtes sur les
+# serveurs virtuels
+NameVirtualHost *:80
+ServerSignature off
+ServerTokens Prod
+
+<VirtualHost *:80>
+    ServerName drupal4.local
+    DocumentRoot /var/www/drupal
+    DirectoryIndex index.php
+
+    ErrorLog /var/log/apache2/error.log
+    CustomLog /var/log/apache2/access.log combined
+
+    <Directory /var/www/drupal>
+        Options Indexes FollowSymLinks MultiViews
+	    AllowOverride All
+	    allow from all
+    </Directory>
+</VirtualHost>

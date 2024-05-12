@@ -1,9 +1,7 @@
-version: '3'
-
 services:
   webdb:
     build:
-      context: .
+      context: ./.docker
       args:
         - MYSQL_DEBIAN_SYS_MAINT_PASSWORD=${MYSQL_DEBIAN_SYS_MAINT_PASSWORD}
     volumes:

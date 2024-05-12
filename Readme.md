@@ -1,12 +1,10 @@
 :warning: DO NOT USE FOR PRODUCTION SITE :warning:  
-Drupal 4 is an old and unmaintained version with many security holes  
+Drupal 4 is an old and unmaintained version with many security breaches  
 Installed packages are also unmaintained versions  
 :warning: DO NOT USE FOR PRODUCTION SITE :warning:  
 
 ## Init project
-
-Create rootfs.tar.xz with .docker/mkimage.sh  
-Copy rootfs.tar.xz in .docker/rootfs.tar.xz  
+ 
 Copy .env.dist to .env and edit it  
 Build and up docker image
 
@@ -41,7 +39,7 @@ mysql -u root -e "DROP DATABASE drupal;"
 
 ## Drupal
 Edit your host file and ENJOY !  
-Website is available at http://drupal4.local
+Website is available at http://drupal4.local or http://127.0.0.1
 
 ## Mailhog
 By default sendmail is configured to use mailhog.  
